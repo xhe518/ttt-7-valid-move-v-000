@@ -18,7 +18,7 @@ end
 
 # code your #valid_move? method here
 def valid_move?
-if position_taken? && between? == false
+if position_taken?(board, index) && between?(index) == false
   true
 else
   false
